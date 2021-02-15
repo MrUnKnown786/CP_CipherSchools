@@ -1,4 +1,4 @@
-//Two people meet each other
+// Two people meet each other
 
 #include<bits/stdc++.h>
 
