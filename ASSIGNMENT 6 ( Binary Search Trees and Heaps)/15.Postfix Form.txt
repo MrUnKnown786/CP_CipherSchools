@@ -1,0 +1,39 @@
+// The postfix form of the expression (A+B)*(C*D-E)*F/G is
+
+ Symbol                              stack                            postfix string  
+
+ (                                     (                                   empty 
+
+ A                                    (                                    	  A 
+
+ +                                     ( +                                       A 
+
+ B                                    ( +                                       A B 
+
+ )                                     empty                                A B + 
+
+ *                                      *                                        A B + 
+
+ (                                      * (                                      A B + 
+
+ C                                     * (                                      A B + C 
+
+ *                                      * ( *                                  A B + C 
+
+ D                                     * ( *                                  A B + C D 
+
+ -                                      * ( -                                   A B + C D *          
+
+ E                                     * ( -                                   A B + C D * E    
+
+ )                                      *                                       A B + C D * E - 
+
+ *                                     * *                                   A B + C D * E - 
+
+ F                                    * *                                   A B  + C D * E - F  
+
+ /                                     * *  /                               A B + C D * E - F 
+
+ G                                    * * /                                A B + C D  * E - F G  
+
+										Empty                             A B + C D * E - F G / * *
